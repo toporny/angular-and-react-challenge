@@ -8,7 +8,8 @@
     $scope.array = [];
     $scope.totalItems = 0;
     $scope.currentPage = 1;
-    $scope.gitUserName = 'toporny';
+    $scope.gitUserName = 'toporny';  // default github user
+
 
     $scope.refreshUser = function() {
       refreshEverything();
@@ -17,7 +18,6 @@
 
     $scope.setPage = function(pageNo) {
       $scope.currentPage = pageNo;
-
       GitHubCommunication.getUserRepoList($scope.gitUserName, $scope.currentPage)
         .then(function(result) {
           $scope.array = result.data;

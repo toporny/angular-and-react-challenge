@@ -11,7 +11,7 @@
 			getUserRepoList: getUserRepoList
 		}
 
-		// get user details and and how many repo user has
+		// get user details (esspecialy and how many repos user has)
 		function getUserDetails(userName) {
 			var deferred = $q.defer();
 			$http({
@@ -28,7 +28,7 @@
 		}
 
 
-		// get user repos list with pagination (10 per page)
+		// get user repos list with pagination (20 per page)
 		function getUserRepoList(userName, page) {
 			var deferred = $q.defer();
 			$http({
@@ -46,6 +46,3 @@
 
 	};
 })();
-
-
-

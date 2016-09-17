@@ -1,4 +1,7 @@
 (function() {
+
+  // this part of code allows to use react component as angular directive
+
   var myReactDirective = React.createClass({
     propTypes: {
       repotable: React.PropTypes.array.isRequired
