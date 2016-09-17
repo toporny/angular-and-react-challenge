@@ -1,0 +1,7 @@
+{
+  "name": "reac-challenge",
+  "version": "0.2.0",
+  "devDependencies": {
+    "express": "^4.12.2"
+  }
+}
