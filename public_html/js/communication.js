@@ -33,7 +33,7 @@
 			var deferred = $q.defer();
 			$http({
 				method: 'GET',
-				url: 'https://api.github.com/users/'+userName+'/repos?page='+page+'&per_page=10' 
+				url: 'https://api.github.com/users/'+userName+'/repos?page='+page+'&per_page=20' 
 			}).then(function successCallback(response) {
 				deferred.resolve(response);
 			}, function errorCallback(response) {
