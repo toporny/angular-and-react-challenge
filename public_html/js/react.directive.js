@@ -1,19 +1,19 @@
 (function() {
   var myReactDirective = React.createClass({
     propTypes: {
-      tablica: React.PropTypes.array.isRequired
+      repotable: React.PropTypes.array.isRequired
     },
     render: function() {
       var tabs = [];
-      for (var i = 0; i < this.props.tablica.length; i++) {
+      for (var i = 0; i < this.props.repotable.length; i++) {
         var tab = React.DOM.a({
           key: i + 'a',
           className: 'repo_link',
-          href: "#"
-        }, this.props.tablica[i].name);
+          href: this.props.repotable[i].html_url
+        }, this.props.repotable[i].name);
         tabs.push(React.DOM.div({
           key: i
-        }, tab, ' ', this.props.tablica[i].description));
+        }, tab, ' ', this.props.repotable[i].description));
       }
       return React.DOM.div({
         className: "list"

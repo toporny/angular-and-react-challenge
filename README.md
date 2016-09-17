@@ -4,11 +4,6 @@ It fetches 20 repos during single request.
 
 Made with angular framework + react.
 
-Most interesting part is this file: 
-```sh
-js/react.directive.js
-```
-
 ### Installation
 
 ```sh
