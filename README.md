@@ -14,4 +14,4 @@ $ node server.js
 ```
 
 working version:
-[http://dokuwiki.alltic.home.pl/challenge/nordea/public](http://dokuwiki.alltic.home.pl/challenge/nordea/public)
+[http://dokuwiki.alltic.home.pl/challenge/nordea/](http://dokuwiki.alltic.home.pl/challenge/nordea/)
