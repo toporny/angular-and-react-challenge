@@ -7,7 +7,6 @@
   function mainCtrl($scope, $http, GitHubCommunication) {
     $scope.array = [];
     $scope.totalItems = 0;
-    $scope.currentPage = 1;
     $scope.gitUserName = 'toporny';  // default github user
 
 
@@ -30,8 +29,8 @@
 
     refreshEverything();
 
-
     function refreshEverything() {
+      $scope.currentPage = 1;
       console.log('$scope.gitUserName', $scope.gitUserName);
       GitHubCommunication.getUserDetails($scope.gitUserName)
         .then(function(result) {
