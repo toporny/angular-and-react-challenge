@@ -21,17 +21,11 @@
       GitHubCommunication.getUserRepoList($scope.gitUserName, $scope.currentPage)
         .then(function(result) {
           $scope.array = result.data;
-          console.log('OK: ', result);
         }, function(result) {
           console.log('Failed: ', result);
           $scope.totalItems = 0;
           $scope.array = [];
         });
-    };
-
-
-    $scope.pageChanged = function() {
-      console.log('Page changed to: ' + $scope.currentPage);
     };
 
     refreshEverything();

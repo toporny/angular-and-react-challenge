@@ -1,5 +1,5 @@
 {
-  "name": "rsgyc-forms form with parlsy-validation and stripe",
+  "name": "Nordea challenge",
   "dependencies": {
     "bootstrap": "3.3.7",
     "angular": "1.5.5",
@@ -7,6 +7,7 @@
     "angular-sanitize" : "1.5.5",
     "react": "15.3.1",
     "ngReact": "0.3.0",
+    "ui-bootstrap-tpls": "https://raw.githubusercontent.com/angular-ui/bootstrap-bower/master/ui-bootstrap-tpls.min.js",
     "angular-ui-bootstrap": "2.1.3"
   }
 }
