@@ -18,7 +18,17 @@ grunt.initConfig({
 					],
 			dest: 'public_html/js/libs.js',
 		},
-	}
+	},
+	copy: {
+	  main: {
+		files: [
+			// includes files within path
+			{expand: false, src: ['bower_components/bootstrap/dist/css/bootstrap.css'], dest: 'public_html/css/bootstrap.css', filter: 'isFile'}
+		],
+	  },
+	},
+    
+
 });
 
 
@@ -26,7 +36,7 @@ grunt.initConfig({
 grunt.loadNpmTasks('grunt-contrib-copy');
 grunt.loadNpmTasks('grunt-contrib-concat');
 
-grunt.registerTask('default', ['concat']);
+grunt.registerTask('default', ['concat', 'copy']);
 
 };
 
