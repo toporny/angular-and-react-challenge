@@ -9,6 +9,7 @@ Made with angular framework + react.
 ```sh
 $ npm install
 $ bower update
+$ grunt
 $ node server.js
 ```
 
