@@ -1,6 +1,7 @@
 (function() {
-	angular.module('app')
-	.service("GitHubCommunication", GitHubCommunication);
+	angular.module('app', ['react','ngAnimate','ngSanitize','ui.bootstrap']);
+ 	angular.module('app').constant('userDetailsUrl', 'https://api.github.com/users/');
+	angular.module('app').service("GitHubCommunication", GitHubCommunication);
 
 	GitHubCommunication.$inject = [ '$http', '$q', 'userDetailsUrl' ];
 
@@ -9,7 +10,7 @@
 		return {
 			getUserDetails: getUserDetails,
 			getUserRepoList: getUserRepoList
-		}
+		};
 
 		// get user details (esspecialy and how many repos user has)
 		function getUserDetails(userName) {
