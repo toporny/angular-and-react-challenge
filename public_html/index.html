@@ -14,7 +14,7 @@
   <body ng-app="app" >
     <div class="container-fluid" ng-controller="mainCtrl">
       <input type="text" value="toporny" ng-model="gitUserName" placeholder="type github username here..">
-      <input type="submit" value="submit" ng-click="refreshUser(gitUserName)">
+      <input type="submit" value="{{submitBtn}}" ng-click="refreshUser(gitUserName)">
       <h2 ng-if="totalItems">name: {{name}}</h2>
       <h3>public_repos: {{totalItems}}</h3>
       <ul ng-if="totalItems > 20"

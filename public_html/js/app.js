@@ -17,6 +17,7 @@
 
     $scope.setPage = function(pageNo) {
       $scope.currentPage = pageNo;
+      $scope.submitBtn = "loading...";
       GitHubCommunication.getUserRepoList($scope.gitUserName, $scope.currentPage)
         .then(function(result) {
           $scope.array = result.data;
@@ -24,6 +25,9 @@
           console.log('Failed: ', result);
           $scope.totalItems = 0;
           $scope.array = [];
+        })
+        .finally(function(response) {
+            $scope.submitBtn = "submit";
         });
     };
 
@@ -31,6 +35,7 @@
 
     function refreshEverything() {
       $scope.currentPage = 1;
+      $scope.submitBtn = "loading...";
       console.log('$scope.gitUserName', $scope.gitUserName);
       GitHubCommunication.getUserDetails($scope.gitUserName)
         .then(function(result) {
@@ -46,8 +51,12 @@
             }, function(result) {
               $scope.totalItems = 0;
               $scope.array = [];
-            })
-        });
+            }).finally(function(response) {
+          });
+        })
+        .finally(function(response) {
+            $scope.submitBtn = "submit";
+        })
     }
   };
 })();
