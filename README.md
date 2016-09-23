@@ -14,3 +14,5 @@ $ bower update
 $ grunt
 $ node server.js
 ```
+
+[http://alltic.home.pl/challenge/nordea/challenge](http://alltic.home.pl/challenge/nordea/challenge)
