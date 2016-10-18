@@ -1,5 +1,6 @@
-## Nordea challenge (angularjs + react) 
-This web application shows public repositories of GitHub user.
+## angular and react together (angularjs + react) 
+This web application shows how to use react (ngReact) inside angular application.
+App shows public repositories of GitHub user.
 It fetches 20 repos during single request.
 
 Made with angularJS + react.
