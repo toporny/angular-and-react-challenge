@@ -16,4 +16,4 @@ $ grunt
 $ node server.js
 ```
 
-[http://alltic.home.pl/my_github/angular-and-react/(http://alltic.home.pl/my_github/angular-and-react/)]
+[http://alltic.home.pl/my_github/angular-and-react/](http://alltic.home.pl/my_github/angular-and-react/)
